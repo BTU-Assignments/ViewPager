@@ -23,8 +23,17 @@ class MainActivity : AppCompatActivity() {
 
         viewPager.adapter = viewPagerFragmentAdapter
 
-        TabLayoutMediator(tabLayout, viewPager) {tab, positon ->
-            tab.text = "Tab ${positon + 1}"
+        TabLayoutMediator(tabLayout, viewPager) {tab, position ->
+            when(position) {
+                0 -> {
+                    tab.text = "Profile"
+                    tab.setIcon(R.drawable.ic_baseline_account_box_24)
+                }
+                1 -> {
+                    tab.text = "Edit Profile"
+                    tab.setIcon(R.drawable.ic_baseline_accessibility_24)
+                }
+            }
         }.attach()
 
     }

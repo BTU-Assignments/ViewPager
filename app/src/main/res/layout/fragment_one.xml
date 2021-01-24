@@ -11,7 +11,7 @@
     >
 
     <TextView
-        android:id="@+id/firstname"
+        android:id="@+id/FirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -39,10 +39,16 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.349" />
+
+    <!--        app:layout_constraintEnd_toStartOf="@+id/lastNameInPut"-->
+
+    <!--    app:layout_constraintTop_toBottomOf="@+id/lastNameInPut"-->
+
+    <!--    app:layout_constraintTop_toBottomOf="@+id/lastname"-->
 
     <TextView
         android:id="@+id/lastName"
@@ -59,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.351" />
 
     <TextView
         android:id="@+id/lastname"
@@ -73,10 +79,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/age"
         app:layout_constraintEnd_toStartOf="@+id/age"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-    <!--        app:layout_constraintEnd_toStartOf="@+id/lastNameInPut"-->
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.537" />
 
     <TextView
         android:id="@+id/ageInPut"
@@ -89,7 +95,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-<!--    app:layout_constraintTop_toBottomOf="@+id/lastNameInPut"-->
 
     <TextView
         android:id="@+id/age"
@@ -103,21 +108,22 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toStartOf="@+id/ageInPut"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-<!--    app:layout_constraintTop_toBottomOf="@+id/lastname"-->
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="206dp"
         android:layout_height="209dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="240dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786"
         tools:srcCompat="@tools:sample/avatars" />
 
 
